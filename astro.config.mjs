@@ -17,7 +17,7 @@ export default defineConfig({
   site: SITE.origin,
   base: SITE.basePathname,
   output: 'server',
-  adapter: cloudflare({ mode: "directory" }),
+  adapter: cloudflare(),
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
   output: 'static',
   integrations: [tailwind({
