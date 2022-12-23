@@ -16,6 +16,7 @@ const whenExternalScripts = (items = []) => SITE.googleAnalyticsId ? Array.isArr
 export default defineConfig({
   site: SITE.origin,
   base: SITE.basePathname,
+  output: 'server',
   adapter: cloudflare({ mode: "directory" }),
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
   output: 'static',
