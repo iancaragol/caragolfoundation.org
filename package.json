@@ -44,7 +44,6 @@
     "node": "^14.15.0 || >=16.0.0"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^5.0.0",
     "astro": "^1.7.2"
   }
 }
