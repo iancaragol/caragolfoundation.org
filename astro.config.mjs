@@ -14,11 +14,10 @@ const whenExternalScripts = (items = []) => SITE.googleAnalyticsId ? Array.isArr
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
-  adapter: cloudflare({ mode: "directory" }),
   site: SITE.origin,
   base: SITE.basePathname,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
+  output: 'server',
   integrations: [tailwind({
     config: {
       applyBaseStyles: false
@@ -41,5 +40,5 @@ export default defineConfig({
       }
     }
   },
-  adapter: cloudflare()
+  adapter: cloudflare(),
 });
